@@ -1,7 +1,8 @@
 .ListCard {
   background-color: #f5faff;
   border-radius: 5px;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem !important;
+  margin: 1rem;
   color: #0f75bc;
   box-shadow: 4px 4px 13px -0px #00000027;
 }
