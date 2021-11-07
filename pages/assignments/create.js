@@ -40,7 +40,10 @@ function create() {
             placeholder="Enter Test series Due"
             required
           />
-          <button type="submit" className="btn btnGrad btn-block btn-primary">
+          <button
+            type="submit"
+            className="btn btnGrad py-2 btn-block btn-primary"
+          >
             {loading ? <SyncOutlined spin /> : "Submit"}
           </button>
         </form>

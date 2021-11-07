@@ -3,9 +3,8 @@ import { Button, Col, Modal, Row, Space } from "antd";
 import React, { useState } from "react";
 import styles from "../../styles/Courses.module.css";
 
-function TestDetailAtnBtn() {
+function TestDetailAtnBtn({ isEnroll }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
-
   const showModal = () => {
     setIsModalVisible(true);
   };
@@ -24,10 +23,20 @@ function TestDetailAtnBtn() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, se</p>
       </Col>
       <Space>
-        <Button icon={<SettingOutlined />} type="dashed"></Button>{" "}
-        <Button onClick={showModal} type="primary">
-          Add Question
-        </Button>{" "}
+        {isEnroll ? (
+          <>
+            <Button onClick={showModal} type="primary" className="btnGrad">
+              Enroll Course
+            </Button>
+          </>
+        ) : (
+          <>
+            <Button icon={<SettingOutlined />} type="dashed"></Button>{" "}
+            <Button onClick={showModal} type="primary">
+              Add Question
+            </Button>
+          </>
+        )}
       </Space>
       <Modal
         title="Create Question"

@@ -24,7 +24,7 @@ function detail() {
   return (
     <div className="container">
       {" "}
-      <TestDetailAtnBtn />
+      <TestDetailAtnBtn isEnroll="false" />
       <Menu
         mode="inline"
         openKeys={openKeys}

@@ -4,9 +4,17 @@
   font-family: "Poppins" !important;
   font-size: 14px;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #0f75bc !important;
+}
 .square {
   border-radius: 0px;
 }
+
 .container {
   max-width: 1450px !important;
   margin-top: 2rem;
@@ -35,7 +43,12 @@
 .btnGrad {
   background: linear-gradient(95.14deg, #262a69 -38.67%, #0f75bc 96.61%);
   color: #fff;
-  padding: 0.7rem 0;
+  padding: 0rem 2rem;
+  transition: 2s;
+}
+
+.btnGrad:hover {
+  background: linear-gradient(95.14deg, #0f75bc -38.67%, #262a69 96.61%);
 }
 
 .singleForm {
@@ -54,11 +67,43 @@ input[type="file"] {
 }
 
 .wrapper {
-  background-color: rgba(15, 116, 188, 0.15);
+  background-color: #f5faff;
   padding: 1rem;
   border-radius: 5px;
 }
 
 svg {
   margin-top: -6px;
+}
+
+.correct {
+  background-color: #c0ffb6 !important;
+}
+
+.notviewed {
+  background-color: #ddeeff !important;
+}
+
+.incorrect {
+  background-color: #ffb8b8 !important;
+}
+
+.markedlater {
+  background-color: #faffc6 !important;
+}
+
+.correct:hover {
+  background-color: #a9fd9b !important;
+}
+
+.notviewed:hover {
+  background-color: #bfdcfa !important;
+}
+
+.incorrect:hover {
+  background-color: #f79a9a !important;
+}
+
+.markedlater:hover {
+  background-color: #f5ff9e !important;
 }
