@@ -16,22 +16,22 @@ function QuestionDetail() {
         preview={false}
         src="https://media.discordapp.net/attachments/820608670810243133/906913440378019892/unknown.png"
       />
-      <Row>
-        <Radio.Group onChange={onChange} value={value}>
+      <Radio.Group onChange={onChange} value={value}>
+        <Row gutter={24} justify="space-between">
           <Col span={12}>
-            <Radio>Radio</Radio>
+            <Radio value={1}>Radio</Radio>
           </Col>
           <Col span={12}>
-            <Radio>Radio</Radio>
+            <Radio value={2}>Radio</Radio>
           </Col>
           <Col span={12}>
-            <Radio>Radio</Radio>
+            <Radio value={3}>Radio</Radio>
           </Col>
           <Col span={12}>
-            <Radio>Radio</Radio>
+            <Radio value={4}>Radio</Radio>
           </Col>
-        </Radio.Group>
-      </Row>
+        </Row>
+      </Radio.Group>
     </div>
   );
 }

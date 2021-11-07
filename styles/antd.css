@@ -35,3 +35,15 @@
 .ant-tabs-tab-active .ant-tabs-tab-btn {
   color: #ffffff !important;
 }
+
+.ant-radio-group {
+  width: 100% !important;
+}
+
+.ant-radio-wrapper {
+  background-color: #ddeeff;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 6px;
+}
